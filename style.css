@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #070706;
+}
+
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-size: 16px;
+    background-color: #f2f2f2;
+    line-height: 1.5;
+}
+
+/* Header styles */
+.hero1 {
+    background-color: var(--primary-color);
+    padding: 5vh 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 4vw;
+    color: #fff;
+    transition: transform 0.5s ease;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Content styles */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.text-container {
+    flex: 1;
+    text-align: left;
+}
+
+.text-container h4,
+.text-container h1,
+.text-container h3 {
+    margin: 0;
+}
+
+.text-container h4 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.text-container h1 {
+    font-size: 4vw;
+    margin-top: 0.5rem;
+}
+
+.text-container h3 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: var(--secondary-color);
+}
+
+/* Reduce the height and add opacity to the "home.jpg" image */
+.content img {
+    max-width: 100%;
+    max-height: 50vh;
+    height: auto;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.content img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* About section styles */
+.about {
+    text-align: center;
+    padding: 2rem;
+}
+
+.about h2 {
+    font-size: 4vw;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.hr-one {
+    width: 100px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 1rem auto;
+}
+
+.about-text {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* Button styles */
+.btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* Hidden text styles */
+.hidden-text {
+    display: none;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+    transition: opacity 0.3s ease;
+}
+
+.hidden-text.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Services section styles with animation */
+.services {
+    background-color: #fff;
+    padding: 2rem;
+    animation: fadeIn 1s ease;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Center-align "OUR SERVICES AT TECHNOVA" text */
+.services h2 {
+    font-size: 4vw;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* Center the "OUR SERVICES AT TECHNOVA" text */
+.hr-two {
+    width: 100px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 1rem auto;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.service img {
+    max-width: 400px;
+    max-height: 240px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.service-text {
+    text-align: left;
+    flex: 1;
+}
+
+/* Footer styles */
+.footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 2vh 1rem;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer:hover {
+    opacity: 1;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer h4 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+/* Responsive styles for screens between 481px and 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .content {
+        padding: 1rem;
+    }
+
+    .text-container h1 {
+        font-size: 3vw;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin-bottom: 1rem;
+    }
+
+    .service-text {
+        font-size: 0.9rem;
+    }
+
+    /* Additional properties for screens between 481px and 768px */
+    .hero1 {
+        padding: 3vh 1rem;
+    }
+
+    .about h4 {
+        font-size: 1rem;
+    }
+
+    .service {
+        margin-top: 1rem;
+    }
+
+    .footer {
+        padding: 2vh 0.5rem;
+    }
+
+    .footer h4 {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive styles for screens smaller than 481px */
+@media screen and (max-width: 480px) {
+    .content {
+        padding: 0.5rem;
+    }
+
+    .text-container h1 {
+        font-size: 2.5vw;
+    }
+
+    .btn {
+        padding: 6px 12px;
+    }
+
+    .logo {
+        font-size: 3vw;
+    }
+
+    .about h2 {
+        font-size: 3vw;
+    }
+
+    .service img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    /* Additional properties for screens smaller than 481px */
+    .hero1 {
+        padding: 2vh 0.5rem;
+    }
+
+    .about h4 {
+        font-size: 0.8rem;
+    }
+
+    .service {
+        margin-top: 0.5rem;
+    }
+
+    .footer {
+        padding: 1vh 0.5rem;
+    }
+
+    .footer h4 {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHNOVA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero1">
+        <div class="hero">
+            <nav>
+                <h2 class="logo"><span>TECH</span>NOVA</h2>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>                   
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- ABOUT THE COMPANY-->
+    <section class="about">
+        <h2>ABOUT</h2>
+        <h2>EXPLORE WITH TECHNOVA</h2>
+        <hr class="hr-one">
+        <div class="main">
+            <div class="about-text">
+                <h4>As a Web Developer and Graphic Designer</h4>
+                <p>I specialize in front-end web design, both static and dynamic websites. Let us brand your business today through web scripting and graphic designing.</p>
+                <button id="showMoreBtn" class="btn">Show More</button>
+                <div id="additionalText" class="hidden-text">
+                    <p>Let us put a smile on your face by bringing your dream into a reality. You do not need an expensive gift to smile. It is a choice. Choose TECHNOVA and experience the beauty of web and graphic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact details-->
+    <footer class="footer">
+        <p>&copy; 2023 TECHNOVA.</p>
+        <h4><a href="tel: +265994570618"><i class="fa-solid fa-phone"></i>+265994570618</a></h4>
+        <nav>
+            <a href="https://wa.me/+265994570618"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+            <a href="mailto:blessingsisaack@gmail.com"><i class="far fa-envelope"></i>Gmail</a>
+        </nav>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script>
+        const showMoreBtn = document.getElementById("showMoreBtn");
+        const additionalText = document.getElementById("additionalText");
+
+        showMoreBtn.addEventListener("click", () => {
+            additionalText.classList.toggle("show");
+            showMoreBtn.textContent = additionalText.classList.contains("show") ? "Show Less" : "Show More";
+        });
+    </script>
+</body>
+</html>

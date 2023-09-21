@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHNOVA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero1">
+        <div class="hero">
+            <nav>
+                <h2 class="logo"><span>TECH</span>NOVA</h2>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>                   
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <img src="./images/desi.jpg" alt="">
+        <div class="text-container">
+            
+            <h1>Contact us on:</h1>
+            <h3>WhatsApp OR Email</h3>
+        </div>
+    </div>
+
+    <!-- Contact details-->
+    <footer class="footer">
+        <p>&copy; 2023 TECHNOVA.</p>
+        <h4><a href="tel: +265994570618"><i class="fa-solid fa-phone"></i>+265994570618</a></h4>
+        <nav>
+            <a href="https://wa.me/+265994570618"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+            <a href="mailto:blessingsisaack@gmail.com"><i class="far fa-envelope"></i>Gmail</a>
+        </nav>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script>
+        const showMoreBtn = document.getElementById("showMoreBtn");
+        const additionalText = document.getElementById("additionalText");
+
+        showMoreBtn.addEventListener("click", () => {
+            additionalText.classList.toggle("show");
+            showMoreBtn.textContent = additionalText.classList.contains("show") ? "Show Less" : "Show More";
+        });
+    </script>
+</body>
+</html>
